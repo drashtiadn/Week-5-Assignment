@@ -1,0 +1,48 @@
+*** REPORT ***
+
+
+                        EVALUATION METRICS OF MODELS
+                        
+                 Logistic    KNN          SVM             DTC          RFC
+Accuracy         0.83        0.83         0.80            0.76         0.81
+Precision        0.86        0.90         0.85            0.75         0.89
+Recall           0.73        0.69         0.65            0.69         0.65
+F1-Score         0.79        0.78         0.74            0.72         0.76
+AUC-ROC          0.82        0.82         0.78            0.76         0.80
+
+
+
+Based on the evaluation metrics , it appears that Logistic Regression and K-Nearest Neighbors (KNN) perform consistently well across multiple metrics, while Support Vector Machines (SVM) , Decision Tree Classifier and Random Forest Classifier (RFC) have lower scores in some areas.
+
+
+- Accuracy:  Logistic Regression and KNN have the highest accuracy (0.83), followed by RFC (0.81), SVM (0.80), and DTC (0.76).
+
+- Precision: KNN has the highest precision (0.90), followed by Logistic Regression (0.86) and RFC (0.89). SVM has a slightly lower precision score (0.85), while DTC has the lowest score (0.75).
+
+- Recall:    Logistic Regression(0.73) have the highest recall scores, followed by DTC and KNN (0.69). SVM and RFC have the lowest scores (0.65).
+
+- F1-Score:  Logistic Regression has the highest F1-Score (0.79), followed closely by KNN (0.78). SVM and RFC have lower scores (0.74 and 0.76, respectively), while DTC has the lowest score (0.72).
+
+- AUC-ROC:   Logistic Regression and KNN have the highest AUC-ROC scores (0.82), followed by SVM (0.78) and RFC (0.80), while DTC has the lowest (0.76)
+
+We can say, Logistic Regression has highest values of all in most of cases.So, Logistic Regression is the best model for this dataset.
+
+** LOGISTIC REGRESSION STRENGTHS, WEAKNESS, POTENTIAL IMPROVEMENTS: **
+
+* Strengths: *
+
+1. Easy to interpret: Logistic regression produces coefficients that can be easily interpreted as the effect of each independent variable on the probability of the dependent variable.
+
+2. Fast and efficient: Logistic regression can be computed relatively quickly and efficiently, even with large datasets.
+
+* Limitations: *
+
+1. Limited to linear relationships: Logistic regression assumes a linear relationship between the independent variables and the log-odds of the dependent variable. This can be limiting if there are non-linear relationships in the data.
+
+2. Overfitting: Logistic regression can overfit the data if too many independent variables are included in the model. This can lead to poor generalization to new data.
+
+*Potential Improvements: *
+
+1. Non-linear models: Non-linear models, such as decision trees or neural networks, can capture more complex relationships between the independent variables and the dependent variable.
+
+2. Handling missing data: Logistic regression assumes that there are no missing data. Techniques such as imputation can be used to handle missing data and improve model performance.
